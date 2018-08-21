@@ -29,11 +29,14 @@ class Cola:
             print("La cola está vacía\n")
         
         else:
-            print(self.items)        
+            print(self.items)
+
 
 c = Cola()
+
 band = 0
 opc = 0
+lista = []
 while opc != 4  :
 
     print("\n Bienvenido al módulo de asignación de cupos para motos ")
@@ -42,13 +45,18 @@ while opc != 4  :
         c.mostrar_cola()
     elif opc == 2:
         nombre = input("Ingrese su nombre: ")
-        c.encolar(nombre)
+        documento = input("Ingrese su documento")
+        placa = input("Ingrese la placa")
+        lista = [nombre,documento,placa]
+        c.encolar(lista)
+        
         while nombre.isdigit():
             print("Error, escriba algo valido")
             nombre = input("Ingrese su nombre: ")
         
     elif opc == 3:
-        c.desencolar()
+        
+         c.desencolar()
         
 
 
