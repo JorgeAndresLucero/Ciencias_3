@@ -45,8 +45,8 @@ while opc != 4  :
         c.mostrar_cola()
     elif opc == 2:
         nombre = input("Ingrese su nombre: ")
-        documento = input("Ingrese su documento")
-        placa = input("Ingrese la placa")
+        documento = input("Ingrese su documento: ")
+        placa = input("Ingrese la placa de su moto: ")
         lista = [nombre,documento,placa]
         c.encolar(lista)
         
